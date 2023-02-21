@@ -118,7 +118,7 @@ nav > ul {
     font-size: 2.2rem;
   }
   .card__text {
-    width: 70%;
+    width: 100%;
     padding: 30px;
   }
   .card__image {
