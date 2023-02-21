@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
-
+:root {
+  --primary: #ff900e;
+  --secondary: #727272;
+  --tertiary: #131313;
+}
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +31,7 @@ body {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .nav-section {
   padding-top: 20px;
@@ -74,23 +79,37 @@ nav > ul {
   height: 400px;
 }
 
-/* .card {
-  height: 100vh;
+.features-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
-.a {
-  background-color: red;
-  width: 200px;
-  height: 100px;
+.features-container > div {
+  flex: 1;
 }
-.b {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-} */
-
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+}
+.team-container div > img {
+  width: 242px;
+  height: 242px;
+}
+.feature-title {
+  font-size: 2.5rem;
+  margin: 12px 0;
+}
+.feature-desc {
+  font-size: 1rem;
+}
+.primary-text {
+  color: var(--primary);
+}
+.seconday-text {
+  color: var(--secondary);
+}
 @media screen and (max-width: 870px) {
   nav > ul {
     gap: 15px;
@@ -104,5 +123,18 @@ nav > ul {
   }
   .card__image {
     width: 100%;
+  }
+  .features-container {
+    flex-direction: column-reverse;
+  }
+  .team-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .team-container div > img {
+    width: 100%;
+    height: 242px;
+    object-fit: cover;
+    object-position: top;
   }
 }
