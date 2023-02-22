@@ -266,7 +266,7 @@ nav > ul {
   }
   .sponsors-logo-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px 20px;
+    padding: 25px;
   }
   .more-features {
     flex-direction: column;
