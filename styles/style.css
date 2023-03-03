@@ -197,8 +197,11 @@ nav > ul {
   border: 1px solid var(--primary);
   padding: 15px 15px;
   text-align: center;
+  transition: transform 2s;
 }
-
+.facts-container > div:hover {
+  transform: scale(1.5);
+}
 .facts-container > div > p {
   color: var(--secondary);
 }
@@ -263,6 +266,9 @@ nav > ul {
   .facts-container > div {
     width: 100%;
     padding: 10px 10px;
+  }
+  .facts-container > div:hover {
+    transform: scale(0.9);
   }
   .sponsors-logo-container {
     grid-template-columns: repeat(2, 1fr);
